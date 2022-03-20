@@ -22,6 +22,7 @@ Esses procedimentos devem ser feitos na raiz do projeto, e são exemplos em ambi
     distlib==0.3.4
     filelock==3.6.0
     Flask==2.0.3
+    gunicorn==20.1.0
     itsdangerous==2.1.1
     Jinja2==3.0.3
     MarkupSafe==2.1.1

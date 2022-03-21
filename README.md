@@ -31,3 +31,13 @@ Esses procedimentos devem ser feitos na raiz do projeto, e são exemplos em ambi
     virtualenv==20.13.4
     Werkzeug==2.0.3
     ```
+
+# Desenvolvimento
+```
+python run.py
+```
+
+# Produção
+```
+gunicorn --bind 0.0.0.0:5000 "run:consumer_ui_service" --worker-class=gthread --threads=4 -w 4
+```

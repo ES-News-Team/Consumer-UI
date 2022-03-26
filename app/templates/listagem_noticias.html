@@ -1,1 +1,19 @@
-{{test}}
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="topicos">
+    <a>&#128568; <strong> Pets</strong></a>
+    <a>&#10024; <strong> Artes</strong></a>
+    <a>&#129488; <strong> Ciência</strong></a>
+</div>
+
+<div class="container">
+
+    <img class="imagem " src="https://thisartworkdoesnotexist.com/" alt="">
+
+    <!-- <iframe src="https://thischemicaldoesnotexist.com/"></iframe> -->
+    <ul> <strong class="titulo">{{news_title}}</strong>
+        &#8756;<pre>{{new_content}}</pre>
+    </ul>
+</div>
+{% endblock %}

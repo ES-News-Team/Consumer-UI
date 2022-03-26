@@ -7,13 +7,19 @@
     <a>&#129488; <strong> Ciência</strong></a>
 </div>
 
+{% for i_news in news%}
 <div class="container">
+    {% if window_title == "Sci News" %}
+        <iframe src={{i_news['news_link_img']}}></iframe>
 
-    <img class="imagem " src="https://thisartworkdoesnotexist.com/" alt="">
-
-    <!-- <iframe src="https://thischemicaldoesnotexist.com/"></iframe> -->
-    <ul> <strong class="titulo">{{news_title}}</strong>
-        &#8756;<pre>{{new_content}}</pre>
+    {% else %}
+        <img class="imagem" src={{i_news['news_link_img']}} alt="">
+    {% endif %}
+    <ul>
+        <strong class="titulo">{{i_news['news_title']}}</strong>
+        &#8756;
+        <pre>{{i_news['new_content']}}</pre>
     </ul>
 </div>
+{% endfor %}
 {% endblock %}

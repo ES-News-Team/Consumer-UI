@@ -1,0 +1,44 @@
+.topicos {
+    display: inline-block;
+    border-bottom: solid 3px #1E90FF;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    color: lightslategrey;
+}
+
+.topicos li {
+    font-size: 20px;
+    margin-left: 300px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.container ul {
+    padding-bottom: 200px;
+}
+
+.titulo {
+    font-size: 30px;
+    color: #DC143C;
+}
+
+.titulo pre {
+    padding-bottom: 165px;
+    font-size: 770px;
+    color: #DC143C;
+    padding-bottom: 262px;
+}
+
+.imagem {
+    margin: 230;
+    margin-left: 8px;
+    margin-top: 18px;
+    height: 300px;
+    width: 300px;
+}

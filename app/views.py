@@ -109,6 +109,7 @@ def pets_news():
 def artes_news():
     return render_template('listagem_noticias.html', **data_art)
 
+
 @consumer_ui_service.route('/ciencias')
 def ciencia_news():
     return render_template('listagem_noticias.html', **data_sci)
